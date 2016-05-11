@@ -330,6 +330,16 @@ class Canvas
      **/
     public function redimensiona($nova_largura = 0, $nova_altura = 0, $tipo = '')
     {
+        // Invertendo o tamanho se a imagem for vertical
+        // Adicionado por Fernando Petry em 11/05/2016
+        if(($this->altura > $this->largura)&&!($nova_largura==0||$nova_altura==0)&&$tipo=='crop'){
+            $tmp_largura = $nova_largura;
+            $tmp_altura = $nova_altura;
+            
+            $nova_altura = $tmp_largura;
+            $nova_largura = $tmp_altura;
+        }
+        
 
         // seta variáveis passadas via parâmetro
         $this->nova_largura = $nova_largura;
