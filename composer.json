@@ -1,0 +1,12 @@
+{
+    "name": "fernandopetry/canvas",
+    "authors": [
+        {
+            "name": "Davi Ferreira",
+            "email": "hi@daviferreira.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["canvas.php"]
+    }
+}
