@@ -66,7 +66,7 @@ class Canvas
      * @param $string caminho da imagem a ser carregada [opcional]
      * @return void
      **/
-    public function __construct($origem = '')
+   private function __construct($origem = '')
     {
 
         $this->origem = $origem;
