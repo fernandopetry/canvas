@@ -1,12 +1,36 @@
 {
     "name": "fernandopetry/canvas",
+    "description": "Classe canvas de Davi Ferreira",
+    "keywords": ["fernandopetry", "php", "image"],
+    "type": "library",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Davi Ferreira",
             "email": "hi@daviferreira.com"
         }
     ],
+    "require": {
+        "php": ">=5.6",
+        "fernandopetry/canvas": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
     "autoload": {
-        "classmap": ["canvas.php"]
-    }
+        "classmap": ["canvas.php"],
+        "psr-4": {
+            "Petry\\Image\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Petry\\Image\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
